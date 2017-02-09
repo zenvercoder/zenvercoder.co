@@ -1,0 +1,131 @@
+:root {
+    --base: #ffc600;
+    --height: 10em;
+    --width: 8em;
+    --size: 110px;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+.featured,
+.about,
+.demo-card-wide.mdl-card.well,
+.projects,
+.codepen,
+.twitter {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: calc(100vh - 100px);
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 751px;
+}
+
+img.featured {
+    width: 100%;
+    z-index: -1;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100%;
+    bottom: 20px;
+    margin: 2% 50%;
+    position: absolute;
+}
+
+.button-box > button {
+    margin: 5px;
+}
+
+.left {
+    z-index: 6;
+    left: 20px;
+    margin-top: 50%;
+    position: fixed;
+}
+
+.right {
+    z-index: 6;
+    right: 36px;
+    margin-top: 50%;
+    position: fixed;
+}
+
+.middle {
+    z-index: 6;
+    margin-top: 50%;
+    position: fixed;
+}
+
+.demo-card-wide.mdl-card.well {
+    width: 100%;
+}
+
+/*@media (min-width: 840px)*/
+.mdl-cell--12-col, .mdl-cell--12-col-desktop.mdl-cell--12-col-desktop {
+    width: calc(100% - 16px);
+}
+
+.hl {
+    color: var(--base);
+}
+
+a {
+    color: var(--base);
+    text-decoration: none;
+}
+
+.demo-card-wide.mdl-card {
+    width: 512px;
+
+}
+
+.well {
+    width: 100%;
+    display: inline-block;
+}
+
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('images/clock.png') center / cover;
+}
+
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.mdl-mega-footer {
+    height: 275px;
+}
