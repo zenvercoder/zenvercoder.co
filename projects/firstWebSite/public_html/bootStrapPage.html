@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootStrapPage.css">
+
+    <!--to include bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+</head>
+<body>
+<!--Use .container-fluid for a full width container, spanning the entire width of your viewport.-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="tease">
+            Aww <a target="_blank" href = "images/yeah-baby.jpg">yeah</a>, Bootstrap 4 is coming!
+        </div>
+    </div>
+    <div class="grid">
+        <div class="row nav-bar">
+            <div class="col-12">
+                <a target="_blank" href = "http://getbootstrap.com/"><b>Bootstrap</b></a>
+                <a target="_blank" href = "http://getbootstrap.com/getting-started/">Getting Started</a>
+                <a target="_blank" href = "http://getbootstrap.com/css/">CSS</a>
+                <a target="_blank" href = "http://getbootstrap.com/components/">Components</a>
+                <a target="_blank" href = "http://getbootstrap.com/javascript/">Javascript</a>
+                <a target="_blank" href = "http://getbootstrap.com/customize/">Customize</a>
+                <!--<div class="col-12">TO DO: figure out how to get space before themes</div>-->
+                <!--<div class="col-12"></div>-->
+                <!--<div class="col-12"></div>-->
+                <a target="_blank" href = "http://themes.getbootstrap.com/">Themes</a>
+                <a target="_blank" href = "http://expo.getbootstrap.com/">Expo</a>
+                <a target="_blank" href = "http://blog.getbootstrap.com/">Blog</a>
+            </div>
+        </div>
+    </div>
+    <div class="purple-bootstrap">
+        <!--fa-3x to increase the size (can go to 5)-->
+        <div>
+            <button type="button" class="btn btn-primary-outline btn-lg big-B">B</button>
+        </div>
+        <p class="popular">Bootstrap is the most popular HTML, CSs, and JS framework for developing responsive,
+            mobile first projects on the web.</p>
+
+        <!--<button type="button" class="btn btn-primary-outline">Primary</button>-->
+        <a class="download btn btn-primary-outline" target="_blank" href="http://getbootstrap.com/getting-started/#download" role="button">Download Bootstrap</a>
+        <div class="current">Currently v3.3.6</div>
+    </div>
+
+    <div class="row">
+        <!--<img src="../images/bootStrapPurple.png" class="img-responsive"></img>-->
+    </div>
+
+    <div class="row designed">
+        <div>
+            <div class="everyone">Designed for everyone, everywhere</div>
+            <div class="row everywhere">
+                BootStrap makes front-end web development faster and easier. It's made for folks
+                of all skill levels, devices of all shapes, and projects of all sizes.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/sass{less}1.png" class="img-responsive features" alt="sass{less}">
+                <h2>Preprocessors</h2>
+                Bootstrap ships with vanilla CSS, but its source code utilizes the two mist popular CSS
+                preprocessors, Less and Sass. Quickly get started with precompiled CSS
+                or build on the source
+            </div>
+            <div class="col-4">
+                <img src="images/every-device.png" class="img-responsive features" alt="every device">
+                <h2>One framework, every device</h2>
+                Bootstrap easily and efficiently scales your websites and applications with a single code
+                base, from phones to tables to desktops with CSS media queries
+            </div>
+            <div class="col-4">
+                <img src="images/feature-full.png" class="img-responsive features" alt="features">
+                <h2>Full of features</h2>
+                With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens
+                of custom HTML and CSS components, and awesome jQuery plugins
+            </div>
+        </div>
+    </div>
+
+    <div class="row documentation">
+        Bootstrap is open source. It's hosted, developed, and maintained on GitHub
+    </div>
+    <div>
+        <a target="_blank" class="github btn btn-primary-outline" href="https://github.com/twbs/bootstrap" role="button">View the GitHub Project</a>
+    </div>
+
+    <div class="footer">
+        <div class="row links">
+            <a target="_blank" href="https://github.com/twbs/bootstrap">GitHub</a>
+            <a target="_blank" href="https://twitter.com/getbootstrap">Twitter</a>
+            <a target="_blank" href="http://getbootstrap.com/getting-started/#examples">Examples</a>
+            <a target="_blank" href="http://getbootstrap.com/about/">About</a>
+        </div>
+        <div>Designed and build with all the love in the world by <a target="_blank" href="https://twitter.com/mdo">@mdo</a> and
+            <a target="_blank" href="https://twitter.com/fat">@fat</a>. Maintained by the <a target="_blank" href="https://github.com/orgs/twbs/people">core team</a>
+            with the help of our <a target="_blank" href="https://github.com/twbs/bootstrap/graphs/contributors">contributors</a>.
+        </div>
+        <div>Code licensed <a target="_blank" href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT</a>, docs
+            <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</div>
+    </div>
+</div>
+</body>
+</html>
+
+<!-- from documentation:
+
+Set background-color: #fff; on the body
+Use the @font-family-base, @font-size-base, and @line-height-base attributes as our typographic base
+Set the global link color via @link-color and apply link underlines only on :hover
+
+Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns
+as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful
+mixins for generating more semantic layouts.
+
+Info on media queries, grid options, stacked-to-horizontal, fluid container, mobila and desktop,
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--http://getbootstrap.com/css/-->
+<!--This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more
+like a native application. Overall, we don't recommend this on every site, so use caution!-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+<!--media queries small devices-->
+<!--@media (min-width: @screen-sm-min) { ... }-->

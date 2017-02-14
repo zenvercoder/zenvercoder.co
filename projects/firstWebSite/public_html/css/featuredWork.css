@@ -1,0 +1,84 @@
+.container {
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    background-color: #FFF;
+    /*color: #bfbfbf;*/
+    /*background-color: #C2DFE3;*/
+    color: #011638;
+    /*color: rgba(102, 77, 0, .8);*/
+    /*color: rgba(191, 191, 191, 0.95);-sizing: border-box;*/
+    -webkit-box
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    /*overflow: hidden;*/
+    overflow: scroll;
+}
+
+div {
+    /* if red border in .container.div only 3 main divs are highlighted*/
+    border: 1px solid red;
+    margin: auto;
+}
+
+/*affects the 3 main divs!*/
+.container>div {
+    /*if not position: aboslute, the 3 main divs are stacked and not aligned*/
+    /*6-7-16, not absolute: links bar can remain fixed in smaller screens*/
+    /*position: absolute;*/
+    /*if not top:0, everything moves way way down*/
+    top: 0;
+    /*if not bottom: 0; the container is short with no scrolling*/
+    bottom: 0;
+}
+
+/*to prevent elements from overflowing their containers*/
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+/*so buttons aren't tiny and impossible to hit*/
+a,
+button {
+    /*tap targets should be bigger than the ave finger*/
+    /*if you don't use min- for width and height
+    it won't allow the element to resize if the content inside of it
+    is bigger than the container*/
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.featured-work {
+    text-align: center;
+    /*font-size: 48px;*/
+}
+.featured-work-img {
+    height: 125px;
+    width: 200px;
+    /*margin-left: 15px;*/
+    /*opacity: 0.6;*/
+    margin: auto;
+}
+
+.button {
+    /*position: relative;*/
+    /*margin: 5px auto 5px auto;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin: auto;
+}
+
+/*.btn-responsive {*/
+    /*padding: 2px 4px;*/
+    /*line-height: 1;*/
+    /*font-size: 80%;*/
+    /*height: 30px;*/
+    /*width: 60px;*/
+    /*border-radius: 12px;*/
+}

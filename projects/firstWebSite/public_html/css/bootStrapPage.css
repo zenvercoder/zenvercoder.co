@@ -1,0 +1,264 @@
+* {
+    /*border: 1px solid red;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    /*columns seem to be wrapping w/ smaller screen now*/
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html body {
+    /*Better Helvetica CSS https://css-tricks.com/snippets/css/better-helvetica/*/
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    text-align: center;
+}
+
+a {
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: auto;
+}
+
+.tease {
+    color: #fff;
+    display: block;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    background-color: #0275d8;
+    /*margin-top: 5px;*/
+}
+
+.tease a {
+    color: #fff;
+}
+
+.nav-bar {
+    /*padding just makes the row thicker*/
+    /*padding: 15px;*/
+    margin: 0;
+    background-color: #fff;
+    border-bottom: 0;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: .2%;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.col-12 {
+
+    width: 100%;
+    /* display: flex; flex-wrap:wrap; Lined up against each other with no margin, even with left and right margin*/
+    /*margin not doing anything maybe b/c display: inline-block?*/
+    /*margin: 0 55px 0 25px;*/
+    /*TO DO fix spacing*/
+    display: inline-block;
+    /*padding: 15px;*/
+}
+
+@media screen and (max-width: 750px) {
+    .col-12 {
+        /*display: block:*/
+        width: 100%;
+        display: flex; flex-wrap:wrap;
+    }
+}
+
+.purple-bootstrap {
+    /*background-color: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);*/
+    background-color: #6f5499;
+    color: white;
+    margin: auto;
+    width: 100%;
+    font-size: 20px;
+    /*TO DO un-hardcode size*/
+    height: 600px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    padding: 80px;
+}
+
+.purple-bootstrap a {
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .purple-bootstrap {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) {
+    .purple-bootstrap {
+        padding: 80px 0;
+    }
+}
+
+/*changed from .button to .btn and it finally worked!*/
+.btn {
+    background-color: transparent;
+    color: white;
+    /*font-size: 90px;*/
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 105px;
+    height: 105px;
+    margin: auto;
+}
+
+.big-B {
+    border: 1px solid white;
+    width: 144px;
+    height: 144px;
+    font-size: 108px;
+    line-height: 140px;
+    font-weight: 600;
+    border-radius: 20px;
+    display: block;
+}
+
+
+.popular {
+    width: 80%;
+    /*margin: auto;*/
+    padding: 25px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 auto 30px;
+}
+
+.download {
+    padding: 15px 30px 15px 30px;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 20px;
+    /*margin: 20px;*/
+    /*margin-bottom: 25px;*/
+}
+
+.current {
+    padding: 55px;
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px;
+}
+
+.designed {
+    padding: 80px;
+}
+
+.everyone {
+    width: 90%;
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.everywhere {
+    font-size: 21px;
+    line-height: 1.4;
+    width: 90%;
+    margin: auto;
+}
+
+.grid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 30px;
+}
+
+.col-4 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33%;
+    /*display: flex; flex-wrap:wrap;*/
+    display: inline-block;
+}
+
+@media screen and (max-width: 750px) {
+    .col-4 {
+        /*display: block:*/
+        width: 100%
+        /*display: flex; flex-wrap:wrap;*/
+    }
+}
+
+.features {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    /*display: flex; flex-wrap:wrap;*/
+    display: inline-block;
+}
+
+.documentation {
+    padding: 50px;
+}
+.github {
+    background-color: transparent;
+    color: #563d7c;
+    border-color: #563d7c;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+/*http://stackoverflow.com/questions/23668104/bootstrap-3-button-hover-focus-state*/
+.github:hover {
+    background-color: #563d7c;
+    color: #fff;
+    border-color: #563d7c;
+}
+
+.footer {
+    background-color: #322634;
+    display: block;
+    box-sizing: border-box;
+    color: #99979c;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    /*TO DO un-hard-code size*/
+    margin: 100px 0 10px;
+    padding: 40px;
+    text-align: left;
+    text-decoration: none;
+    cursor: auto;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.footer a {
+    color: white;
+}
+
+.links {
+    /*does nothing*/
+    /*width: 30%;*/
+}
+
+
+@media (min-width: 768px) {
+    .footer {
+        margin-bottom: 0;
+    }
+}

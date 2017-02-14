@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/featuredWork.css">
+    <!--Telling Internet Explorer to use best engine you've got-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--for mobile-->
+    <!--Instructs page to match the screen's width in device independent pixels-->
+    <meta name="viewport" content="width=" device-width, initial-scale=1">
+    <!--include modals-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="framework/jQuery/jquery-2.2.3.js"></script>
+    <script type="text/javascript" src="framework/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css">
+    <!--include fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link rel="images" src="images">
+    <title>Featured Work</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-thin featured-work">
+                Featured Work
+            </h4>
+        </div>
+    </div>
+        <div>
+            <!-- Button trigger modal -->
+            <div>
+                <a target="_blank" href="http://codepen.io/zenvercoder/pen/EKrJNj">
+                    <img class="featured-work-img img-responsive" src="images/firstCodePen.png">
+                </a>
+            </div>
+            <div class="button">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#project1">
+                    My First Code Pen
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <!-- Button trigger modal -->
+            <a target="_blank" href="http://codepen.io/zenverdev/pen/ZWZbyv">
+                <img class="img-responsive featured-work-img" src="images/hippoPen.png">
+            </a>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#project2">
+                Hippogriff
+            </button>
+        </div>
+
+        <div>
+            <!-- Button trigger modal -->
+            <a target="_blank" href="http://zenvercoder.co/bootStrapPage.html">
+                <img class="img-responsive featured-work-img" src="images/bootStrapProject.png">
+            </a>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#project3">
+                Bootstrap Mockup
+            </button>
+        </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <!--Udacity example-->
+        <div class="modal-dialog" ßrole="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">My First Codepen</h4>
+                </div>
+                <div class="modal-body">
+                    I played around with HTML & CSS in the codepen environment. I tried out some CSS features like
+                    scale, animate, transform, shadows and translate. It was super fun and I especially loved
+                    seeing my code in action in real time. It made me feel more connected to my own code <3
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Animal Trading Card</h4>
+                </div>
+                <div class="modal-body">
+                    <!--<img class="img-responsive" src="images/555.jpeg">-->
+                    This was my first project in Udacity's Front End Developer Program.
+                    I learned more about HTML and CSS. The Hippogriff art is not mine (found it on pinterest)
+                    The most difficult part of this project was positioning.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bootstrap Mockup</h4>
+                </div>
+                <div class="modal-body">
+                    <!--unnecessary to have another pic, plus it's not aligned-->
+                    <!--<img class="img-responsive featured-work-img" src="images/bootStrapProject.png">-->
+                    A side project I did while learning about bootstrap in
+                    Udacity's Front End Developer Program. I was enamored with bootstrap because it made so much
+                    sense with the grids and columns. I wanted extra practice with bootstrap, so I decided to do
+                    a mockup of the actual boostrap page. I had a lot of fun with this one!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

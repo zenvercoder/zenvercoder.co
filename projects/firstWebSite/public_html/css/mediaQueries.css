@@ -1,0 +1,7 @@
+.container {
+    background-color: #5c5c5c;
+}
+
+/* embedded @ media queries*/
+/*min-width (the thing starts at whatever px)
+max-width (the thing goes until max-width px)*/
